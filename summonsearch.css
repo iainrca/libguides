@@ -1,0 +1,47 @@
+/*********************/
+/* SUMMON SEARCH BOX */
+/*********************/
+
+#summon {
+	margin: 32px auto 12px auto;
+}
+#summon div.options {
+	color: #fff; 
+	margin-top: 8px; 
+	font-size: 1.2em;
+}
+#summon .options input {
+	margin-left: 6px;
+	margin-right: 2px;
+}
+#summon .options label {
+	font-weight: normal;
+	color: #fff;
+}
+#summon .headings {
+	margin-bottom: 20px;
+}
+#summon .btn {
+	font-size: 20px;
+}
+#summon input.searchsummon {
+	border: 5px solid #faa11e;
+}
+
+#summon input.searchsummon {
+	border: 6px solid #faa11e;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px; 
+}
+
+
+#summon div.advancedsearch a {
+	color:#ffffff;
+}
+#summon div.advancedsearch a:hover {
+	color: #faa11e;
+}
+#summon .form-inline .radio {
+	vertical-align: middle;
+	margin-bottom:2px;
+}
