@@ -5,9 +5,10 @@
 #summon {
 	margin: 32px auto 12px auto;
 	color:000;
+	font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
 }
 #summon div.options {
-	color: #000; 
+	/*color: #000; */
 	margin-top: 8px; 
 	font-size: 1.2em;
 }
