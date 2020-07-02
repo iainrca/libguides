@@ -48,6 +48,10 @@
 	margin-bottom:2px;
 }
 
-#summon div.options {
+#summon div.options label {
+	color:#000;
+}
+
+#summon label {
 	color:#000;
 }
