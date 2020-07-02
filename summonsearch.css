@@ -24,15 +24,15 @@
 #summon .btn {
 	font-size: 20px;
 }
-#summon input.searchsummon {
+/*#summon input.searchsummon {
 	border: 5px solid #faa11e;
-}
+}*/
 
-#summon input.searchsummon {
+/*#summon input.searchsummon {
 	border: 6px solid #faa11e;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px; 
-}
+}*/
 
 
 #summon div.advancedsearch a {
