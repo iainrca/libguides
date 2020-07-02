@@ -38,12 +38,16 @@
 
 
 #summon div.advancedsearch a {
-	color:#ffffff;
+	color:#000;
 }
 #summon div.advancedsearch a:hover {
-	color: #faa11e;
+	color: #ff5d1c;
 }
 #summon .form-inline .radio {
 	vertical-align: middle;
 	margin-bottom:2px;
+}
+
+#summon div.options {
+	color:#000;
 }
