@@ -4,9 +4,10 @@
 
 #summon {
 	margin: 32px auto 12px auto;
+	color:000;
 }
 #summon div.options {
-	color: #fff; 
+	color: #000; 
 	margin-top: 8px; 
 	font-size: 1.2em;
 }
@@ -46,12 +47,4 @@
 #summon .form-inline .radio {
 	vertical-align: middle;
 	margin-bottom:2px;
-}
-
-#summon div.options label {
-	color:#000;
-}
-
-#summon label {
-	color:#000;
 }
