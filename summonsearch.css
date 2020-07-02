@@ -23,6 +23,8 @@
 }
 #summon .btn {
 	font-size: 20px;
+	background-color:#000;
+	color:#fff;
 }
 /*#summon input.searchsummon {
 	border: 5px solid #faa11e;
