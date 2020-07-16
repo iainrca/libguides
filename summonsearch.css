@@ -6,6 +6,7 @@
 	margin: 32px auto 12px auto;
 	color:#000;
 	font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+	text-align:center;
 }
 #summon div.options {
 	color: #000;
@@ -24,7 +25,7 @@
 	margin-bottom: 20px;
 }
 #summon .btn {
-	font-size: 20px;
+	font-size: 15px;
 	background-color:#000;
 	color:#fff;
 }
