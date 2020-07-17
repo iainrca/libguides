@@ -1,0 +1,164 @@
+<script>
+$(document).ready(function() { 
+  $('#s-lib-bc-customer > a').text('Royal College of Art');
+  $('#s-lib-bc-customer > a').attr('title','Royal College of Art');
+  $('#s-lib-bc-customer').after('<li id="s-lib-bc-libhome"><a title="Library Services" href="https://intranet.rca.ac.uk/support/library/">Library Services</a></li>');
+  // for the penultimate link, change it depending on if databases or guides
+  if (window.location.href.indexOf('az.php') > -1) {
+     $('#s-lib-bc-site > a').text('Online Resources');  
+     $('#s-lib-bc-site > a').attr('href','https://rca.libguides.com/az.php');
+     $('#s-lib-bc-site > a').attr('title','Online Resources');
+  }
+  else {
+     $('#s-lib-bc-site > a').text('Online Resources');
+     $('#s-lib-bc-site > a').attr('href','https://rca.libguides.com/az.php');
+     $('#s-lib-bc-site > a').attr('title','Online Resources');
+  }
+});
+/*$(".s-lg-az-result-badge-trial").append("<b>Test</b>");*/
+
+/*Script for Summon search box*/
+$(document).ready(function() {
+	
+	$('#promodupe').html( $('#promo').html( ) );
+	
+	$('#summon form input[type=radio][name=limit]').change(function() {
+		updateHiddenFacet( );
+	});
+
+	updateHiddenFacet( );
+
+	setTimeout(function() { 
+		console.log('MYREADING = '+myReading);
+		if( myReading == 1 ) {
+			$('#summon form').append('<input type="hidden" name="myreading" value="1">');
+		}
+	}, 2000);
+	
+});
+
+
+function updateHiddenFacet( ) {
+	var limit = $('#summon form input[name=limit]:checked').val( );
+	if( limit == 'books' )			{ $('#facetfield').html('<input type="hidden" name="fvf" value="ContentType,Book / eBook,f" />'); }
+	else if( limit == 'articles' )	{ $('#facetfield').html('<input type="hidden" name="fvf" value="ContentType,Journal Article,f" />'); }
+	else							{ $('#facetfield').html(''); }
+};
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/2dc77ba2-6663-49b6-9e6c-aa009c06648b.css" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7787252/679822/css/fonts.css" />
+
+<style>
+.s-lib-public-body, .s-lib-public-side-header h2,.s-lib-public-header-title, .s-lg-guide-body{
+font-family:"Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+}
+#s-lib-banner {
+background-color:#000!important;
+}
+/* removing the Vendor column search*/
+#col-vendors{
+display:none;
+}
+#s-lib-banner-img{
+    width: 25%;
+    height: 25%;
+   padding: 10px;
+}
+/*change button background colour to RCA black style*/
+.btn-info, .btn-info.active, .btn-info:active, .btn-info:focus, .btn-info:hover, .btn-warning {
+    background-color: #000;
+    border-color: #000;
+}
+.nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+a:hover, .btn-link:hover, .btn-info:hover, .nav .s-lg-index-nav-btn>button:hover {
+      color: #ff5d1c;
+}
+
+#ftr-interact, #ftr-search, #ftr-about-us {
+    display: inline-block;
+}
+#ftr-interact, #ftr-search, #ftr-about-us {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+.s-lg-az-result-description, .s-lg-az-result-moreinfo, .s-lg-az-result-moreinfo-link, .s-lg-content-more-info, .s-lg-label-more-info button {
+    font-size:14px;
+}
+
+#s-lg-az-results, .s-lg-az-result-title {
+    font-size:16px!important;
+}
+/*********************/
+/* SUMMON SEARCH BOX */
+/*********************/
+
+#summon {
+	margin: 32px auto 12px auto;
+	color:#000;
+	font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+	text-align:center;
+        max-width:75%
+}
+#summon div.options {
+	color: #000;
+	margin-top: 8px; 
+	font-size: 1.2em;
+}
+#summon .options input {
+	margin-left: 6px;
+	margin-right: 2px;
+}
+#summon .options label {
+	font-weight: normal;
+	color: #000;
+}
+#summon .headings {
+	margin-bottom: 20px;
+}
+#summon .btn {
+	font-size: 15px;
+	background-color:#000;
+	color:#fff;
+}
+/*#summon input.searchsummon {
+	border: 5px solid #faa11e;
+}*/
+
+/*#summon input.searchsummon {
+	border: 6px solid #faa11e;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px; 
+}*/
+
+
+#summon div.advancedsearch a {
+	color:#000;
+}
+#summon div.advancedsearch a:hover {
+	color: #ff5d1c;
+}
+#summon .form-inline .radio {
+	vertical-align: middle;
+	margin-bottom:2px;
+}
+
+#summon span.screenreader {
+	display:none;
+}
+
+#summon img {
+	max-height:45px;
+	max-width:45%;
+}
+</style>
